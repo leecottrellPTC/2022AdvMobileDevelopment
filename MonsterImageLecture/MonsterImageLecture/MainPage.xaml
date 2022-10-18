@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MonsterImageLecture.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            BackgroundColor="Black">
+
+            <Label Text="Monster Movie Pics" FontSize="36" TextColor="Orange"/>
+            <Picker Title="Pick a movie"
+                    x:Name="moviePicker"
+                    BackgroundColor="Orange"
+                    FontSize="Large"
+                    SelectedIndexChanged="OnMovieSelectedIndexChanged">
+                <Picker.ItemsSource>
+                    <x:Array Type="{x:Type x:String}">
+                        <x:String>Alien</x:String>
+                        <x:String>Friday the 13th</x:String>
+                        <x:String>Halloween</x:String>
+                    </x:Array>
+                </Picker.ItemsSource>
+            </Picker>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/> <!--this takes remaining space-->
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Poster" Grid.Row="0" Grid.Column="0"/>
+                <Label Text="Monster" Grid.Row="0" Grid.Column="1"/>
+
+                <Image x:Name="posterImage" Source="blank.png" 
+                       WidthRequest="{OnPlatform Android='150', iOS='150', Default='500'}" 
+                       Grid.Row="1" Grid.Column="0"/>
+                <Image x:Name="monsterImage" Source="blank.png" 
+                       WidthRequest="{OnPlatform Android='150', iOS='150', Default='500'}" 
+                       Grid.Row="1" Grid.Column="1"/>
+
+            </Grid>
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
