@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutLesson1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label Text="I am Mae Mu!"
+                   FontSize="Header"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Image
+                Source="maemu.jpg"
+                SemanticProperties.Description="Image of Maemu - Pic of Tasty"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label Text="I am Mae Mu, better known as Pic of Tasty....."/>
+
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

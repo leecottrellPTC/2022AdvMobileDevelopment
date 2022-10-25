@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="LayoutLesson1.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:LayoutLesson1"
+    xmlns:views="clr-namespace:LayoutLesson1.Views"
+    Shell.FlyoutBehavior="Disabled">
+
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent Title="About Me"
+                      Icon="user.png"
+                      ContentTemplate="{DataTemplate local:MainPage}"/>
+        <Tab Title="Breakfast"
+             Icon="breakfast.png">
+            <ShellContent Title="Breakfast Drink"
+                          Icon="softdrink.png"
+                          ContentTemplate="{DataTemplate views:BreakfastDrink}"/>
+            <ShellContent Title="Breakfast Food"
+                          Icon="croissant.png"
+                          ContentTemplate="{DataTemplate views:BreakfastFood}"/>
+        </Tab>
+        
+        <ShellContent Title="Dessert"
+                      Icon="cookie.png"
+                      ContentTemplate="{DataTemplate views:Dessert}"/>
+
+        <ShellContent Title="Fruit"
+                      Icon="fruit.png"
+                      ContentTemplate="{DataTemplate views:Fruit}"/>
+
+    </FlyoutItem>
+
+</Shell>

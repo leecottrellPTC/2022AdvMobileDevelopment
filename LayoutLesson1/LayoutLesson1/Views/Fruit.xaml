@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutLesson1.Views.Fruit"
+             Title="Fruit">
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Pictures of Fruit"
+               FontSize="Medium"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="250"/>
+                    <RowDefinition Height="250"/>
+                    <RowDefinition Height="250"/>
+                </Grid.RowDefinitions>
+                <Label Text="This is a picture of an apple ....."
+                   FontSize="Medium" Grid.Column="0" Grid.Row="0"/>
+
+                <Label Text="This is a picture of a cherry ....."
+                   FontSize="Medium" Grid.Column="0" Grid.Row="1"/>
+
+                <Label Text="This is a picture of a orange ....."
+                   FontSize="Medium" Grid.Column="0" Grid.Row="2"/>
+
+                <Image Source="apple.jpg"
+                   SemanticProperties.Description="A picture of an apple"
+                   Grid.Column="1" Grid.Row="0" />
+
+                <Image Source="cherry.jpg"
+                   SemanticProperties.Description="A picture of a cherry"
+                   Grid.Column="1" Grid.Row="1" />
+
+                <Image Source="orange.jpg"
+                   SemanticProperties.Description="A picture of an orange"
+                   Grid.Column="1" Grid.Row="2" />
+
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
