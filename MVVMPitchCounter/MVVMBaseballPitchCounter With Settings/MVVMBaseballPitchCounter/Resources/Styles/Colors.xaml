@@ -41,7 +41,20 @@
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
 
-    <Color x:Key="PirateYellow">#FDB827</Color>
-    <Color x:Key="PirateBlack">#27251F</Color>
+    <Color x:Key="PirateText">#FDB827</Color>
+    <Color x:Key="PirateBack">#27251F</Color>
+
+    <Color x:Key="AstrosText">#eb6e1f</Color>
+    <Color x:Key="AstrosBack">#002d62</Color>
+
+    <Color x:Key="PhilliesText">#e81828</Color>
+    <Color x:Key="PhilliesBack">#002d72</Color>
+
+    <Color x:Key="RockiesText">#c4ced4</Color>
+    <Color x:Key="RockiesBack">#333366</Color>
+
+    <Color x:Key="TeamText">#000000</Color>
+    <Color x:Key="TeamBack">#ffffff</Color>
+
 
 </ResourceDictionary>

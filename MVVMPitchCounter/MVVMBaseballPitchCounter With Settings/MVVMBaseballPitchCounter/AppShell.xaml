@@ -4,11 +4,20 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:MVVMBaseballPitchCounter"
+    xmlns:views="clr-namespace:MVVMBaseballPitchCounter.Views"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+        Route="MainPage"
+        Icon="baseball.png"/>
+
+        <ShellContent
+           Title="Settings"
+           ContentTemplate="{DataTemplate views:Settings}"
+           Icon="settings.png"/>
+    </FlyoutItem>
 
 </Shell>

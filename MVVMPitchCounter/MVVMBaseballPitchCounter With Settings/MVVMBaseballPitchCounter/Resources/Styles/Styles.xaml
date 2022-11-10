@@ -24,8 +24,7 @@
     </Style>
 
     <Style TargetType="Button">
-        <Setter Property="BackgroundColor" Value="{StaticResource PirateYellow}"/>
-        <Setter Property="TextColor" Value="{StaticResource PirateBlack}"/>
+       
         <Setter Property="FontSize" Value="Medium"/>
         <Setter Property="FontAttributes" Value="Bold"/>
         <Setter Property="CornerRadius" Value="10"/>
@@ -138,7 +137,7 @@
     </Style>
 
     <Style TargetType="Label">
-        <Setter Property="TextColor" Value="{StaticResource PirateYellow}"/>
+        <Setter Property="TextColor" Value="{DynamicResource TeamText}"/>
         <Setter Property="FontSize" Value="Large"/>
         <Setter Property="HorizontalTextAlignment" Value="End"/>
         <Setter Property="VerticalTextAlignment" Value="Center"/>
