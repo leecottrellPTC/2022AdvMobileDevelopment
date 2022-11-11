@@ -40,7 +40,7 @@
     <Color x:Key="Blue100Accent">#3E8EED</Color>
     <Color x:Key="Blue200Accent">#72ACF1</Color>
     <Color x:Key="Blue300Accent">#A7CBF6</Color>
-
+<!--
     <Color x:Key="PirateText">#FDB827</Color>
     <Color x:Key="PirateBack">#27251F</Color>
 
@@ -55,6 +55,5 @@
 
     <Color x:Key="TeamText">#000000</Color>
     <Color x:Key="TeamBack">#ffffff</Color>
-
-
+-->
 </ResourceDictionary>
