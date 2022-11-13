@@ -6,7 +6,7 @@
     <ScrollView BackgroundColor="{DynamicResource TeamBack}">
         <StackLayout>
             <Frame BackgroundColor="{DynamicResource TeamText}" Padding="24" Margin="0,0,0,24" CornerRadius="0">
-                <Label Text="Settings Page" HorizontalOptions="Center" TextColor="{DynamicResource TeamBack}" FontSize="36"/>
+                <Label Text="Settings Page" HorizontalOptions="Center" TextColor="{DynamicResource TeamBack}" BackgroundColor="{DynamicResource TeamText}" FontSize="36"/>
             </Frame>
             <Grid>
                 <Grid.ColumnDefinitions>
@@ -25,7 +25,7 @@
                        BackgroundColor="{StaticResource PirateBack}"
                        TextColor="{StaticResource PirateText}" Grid.Column="1" Grid.Row="0"
                        HorizontalTextAlignment="Center"/>
-                <RadioButton x:Name="Pirate"  Grid.Column="2" Grid.Row="0" GroupName="Teams"/>
+                <RadioButton x:Name="Pirates"  Grid.Column="2" Grid.Row="0" GroupName="Teams" CheckedChanged="OnTeamChange"/>
 
                 <Label Text="Houston Astros" TextColor ="{DynamicResource TeamText}" Grid.Column="0" Grid.Row="1" HorizontalTextAlignment="Start"/>
                 <Label Text="Colors"
@@ -40,14 +40,14 @@
                        BackgroundColor="{StaticResource PhilliesBack}"
                        TextColor="{StaticResource PhilliesText}" Grid.Column="1" Grid.Row="2"
                        HorizontalTextAlignment="Center"/>
-                <RadioButton x:Name="Phillies"  Grid.Column="2" Grid.Row="2" GroupName="Teams"/>
+                <RadioButton x:Name="Phillies"  Grid.Column="2" Grid.Row="2" GroupName="Teams" CheckedChanged="OnTeamChange"/>
 
                 <Label Text="Colorado Rockies" TextColor ="{DynamicResource TeamText}" Grid.Column="0" Grid.Row="3" HorizontalTextAlignment="Start"/>
                 <Label Text="Colors"
                        BackgroundColor="{StaticResource RockiesBack}"
                        TextColor="{StaticResource RockiesText}" Grid.Column="1" Grid.Row="3"
                        HorizontalTextAlignment="Center"/>
-                <RadioButton x:Name="Rockies"  Grid.Column="2" Grid.Row="3" GroupName="Teams"/>
+                <RadioButton x:Name="Rockies"  Grid.Column="2" Grid.Row="3" GroupName="Teams" CheckedChanged="OnTeamChange"/>
             </Grid>
         </StackLayout>
     </ScrollView>

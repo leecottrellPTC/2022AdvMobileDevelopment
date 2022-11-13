@@ -53,7 +53,7 @@
     <Color x:Key="RockiesText">#c4ced4</Color>
     <Color x:Key="RockiesBack">#333366</Color>
 
-    <Color x:Key="TeamText">#000000</Color>
-    <Color x:Key="TeamBack">#ffffff</Color>
+    <Color x:Key="TeamText">#FDB827</Color>
+    <Color x:Key="TeamBack">#27251F</Color>
 -->
 </ResourceDictionary>

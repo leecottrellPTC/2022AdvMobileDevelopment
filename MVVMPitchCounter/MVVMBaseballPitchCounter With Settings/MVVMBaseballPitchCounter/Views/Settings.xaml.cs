@@ -8,17 +8,29 @@ public partial class Settings : ContentPage
 
     void OnTeamChange(object sender, CheckedChangedEventArgs args)
 	{
-		Color text, back;
+		//Color text = new Color(), back;
 		if (sender.Equals(Astros))
 		{
-			//DisplayAlert("Team", "Astros picked", "OK");
-
-			text = (Color)Application.Current.Resources["AstrosText"];
-            back = (Color)Application.Current.Resources["AstrosBack"];
-            Resources["TeamText"] = text;
-            Resources["TeamBack"] = back;
+			Application.Current.Resources["TeamText"] = Application.Current.Resources["AstrosText"];
+            Application.Current.Resources["TeamBack"] = Application.Current.Resources["AstrosBack"];
         }
-        
+		
+		else if (sender.Equals(Rockies))
+		{
+            Application.Current.Resources["TeamText"] = Application.Current.Resources["RockiesText"];
+            Application.Current.Resources["TeamBack"] = Application.Current.Resources["RockiesBack"];
+        }
+        else if (sender.Equals(Phillies))
+        {
+            Application.Current.Resources["TeamText"] = Application.Current.Resources["PhilliesText"];
+            Application.Current.Resources["TeamBack"] = Application.Current.Resources["PhilliesBack"];
+        }
+        else 
+        {   //default to Pirates
+            Application.Current.Resources["TeamText"] = Application.Current.Resources["PiratesText"];
+            Application.Current.Resources["TeamBack"] = Application.Current.Resources["PiratesBack"];
+        }
+
     }
 	public Settings()
 	{

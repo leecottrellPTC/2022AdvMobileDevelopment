@@ -8,9 +8,9 @@
     </ContentPage.BindingContext>
 
     <ScrollView>
-        <StackLayout BackgroundColor="{DynamicResource TeamText}">
-            <Frame BackgroundColor="{DynamicResource TeamBack}" Padding="24" Margin="0,0,0,24" CornerRadius="0">
-                <Label Text="Pitch Counter!" HorizontalOptions="Center" TextColor="{DynamicResource TeamText}" FontSize="36"/>
+        <StackLayout BackgroundColor="{DynamicResource TeamBack}">
+            <Frame BackgroundColor="{DynamicResource TeamText}" Padding="24" Margin="0,0,0,24" CornerRadius="0">
+                <Label Text="Pitch Counter!" HorizontalOptions="Center" BackgroundColor="{DynamicResource TeamText}" TextColor="{DynamicResource TeamBack}" FontSize="36"/>
             </Frame>
             <Grid RowSpacing="6" ColumnSpacing="6">
                 <Grid.ColumnDefinitions>
@@ -23,9 +23,7 @@
                     <RowDefinition Height="50"></RowDefinition>
                     <RowDefinition Height="200"></RowDefinition>
                 </Grid.RowDefinitions>
-                <Button Text="Ball" Command="{Binding AddBallCommand}" Grid.Column="0" Grid.Row="0" 
-                        TextColor="{DynamicResource TeamText}" 
-                        BackgroundColor="{DynamicResource TeamBack}"/>
+                <Button Text="Ball" Command="{Binding AddBallCommand}" Grid.Column="0" Grid.Row="0" />
                 <Button Text="Strike" Command="{Binding AddStrikeCommand}" Grid.Column="0" Grid.Row="1"/>
 
                 <Label Text="{Binding ThePitcher.Balls}" Grid.Column="1" Grid.Row="0"/>

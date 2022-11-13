@@ -30,6 +30,8 @@
         <Setter Property="CornerRadius" Value="10"/>
         <Setter Property="BorderColor" Value="#ffffff"/>
         <Setter Property="BorderWidth" Value="3"/>
+        <Setter Property="BackgroundColor" Value="{DynamicResource TeamText}"/>
+        <Setter Property="TextColor" Value="{DynamicResource TeamBack}"/>
     </Style>
 
     <Style TargetType="CheckBox">
@@ -137,6 +139,7 @@
     </Style>
 
     <Style TargetType="Label">
+        <Setter Property="BackgroundColor" Value="{DynamicResource TeamBack}"/>
         <Setter Property="TextColor" Value="{DynamicResource TeamText}"/>
         <Setter Property="FontSize" Value="Large"/>
         <Setter Property="HorizontalTextAlignment" Value="End"/>

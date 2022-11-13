@@ -1,9 +1,12 @@
-﻿namespace MVVMBaseballPitchCounter;
+﻿using Microsoft.Extensions.Configuration;
+
+
+namespace MVVMBaseballPitchCounter;
 
 public partial class MainPage : ContentPage
 {
 	int count = 0;
-
+   
 	public MainPage()
 	{
 		InitializeComponent();
@@ -11,6 +14,9 @@ public partial class MainPage : ContentPage
         //Resources["TeamBack"] = Color.FromHex("#002d62");
         //https://www.youtube.com/watch?v=yMhoht9VaTM
         //await DisplayAlert("Hi", "Main pAge", "OK");
+
+
+
     }
 
 

@@ -10,9 +10,9 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
             </ResourceDictionary.MergedDictionaries>
 
-
-            <Color x:Key="PirateText">#FDB827</Color>
-            <Color x:Key="PirateBack">#27251F</Color>
+<!--why here and not in the dictionary?? -->
+            <Color x:Key="PiratesText">#FDB827</Color>
+            <Color x:Key="PiratesBack">#27251F</Color>
 
             <Color x:Key="AstrosText">#eb6e1f</Color>
             <Color x:Key="AstrosBack">#002d62</Color>
@@ -23,8 +23,9 @@
             <Color x:Key="RockiesText">#c4ced4</Color>
             <Color x:Key="RockiesBack">#333366</Color>
 
-            <Color x:Key="TeamText">#000000</Color>
-            <Color x:Key="TeamBack">#ffffff</Color>
+            <Color x:Key="TeamText">#FDB827</Color>
+            <Color x:Key="TeamBack">#27251F</Color>
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

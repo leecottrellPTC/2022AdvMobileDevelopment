@@ -1,4 +1,7 @@
-﻿namespace MVVMBaseballPitchCounter;
+﻿using Microsoft.Extensions.Configuration;
+using System.Reflection;
+
+namespace MVVMBaseballPitchCounter;
 
 public static class MauiProgram
 {
@@ -13,6 +16,8 @@ public static class MauiProgram
 				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
 			});
 
-		return builder.Build();
+
+
+        return builder.Build();
 	}
 }
