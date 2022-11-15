@@ -32,7 +32,7 @@
                 <Label Text="Total Pitches" Grid.Column="0" Grid.Row="2" HorizontalTextAlignment="Center"/>
                 <Label Text="{Binding ThePitcher.TotalPitches}" Grid.Column="1" Grid.Row="2" HorizontalTextAlignment="Center"/>
             </Grid>
-            <Button Text="Reset" VerticalOptions="End"/>
+            <Button Text="Reset" VerticalOptions="End" Clicked="ResetButton"/>
         </StackLayout>
     </ScrollView>
 
