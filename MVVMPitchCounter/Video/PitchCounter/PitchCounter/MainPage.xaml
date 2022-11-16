@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PitchCounter.MainPage">
+
+    <ScrollView>
+        <StackLayout BackgroundColor="{DynamicResource TeamBack}">
+            <Frame BackgroundColor="{DynamicResource TeamText}" Padding="24" Margin="0,0,0,24" CornerRadius="0">
+                <Label Text="Pitch Counter!" HorizontalOptions="Center" BackgroundColor="{DynamicResource TeamText}" 
+                       TextColor="{DynamicResource TeamBack}" FontSize="36"/>
+            </Frame>
+            <Grid RowSpacing="6" ColumnSpacing="6">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions >
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="50"></RowDefinition>
+                    <RowDefinition Height="200"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Button Text="Ball"  Grid.Column="0" Grid.Row="0"/>
+                <Button Text="Strike"  Grid.Column="0" Grid.Row="1"/>
+
+                <Label Text="0" Grid.Column="1" Grid.Row="0"/>
+                <Label Text="0" Grid.Column="1" Grid.Row="1"/>
+
+                <Label Text="Total Pitches" Grid.Column="0" Grid.Row="2" HorizontalTextAlignment="Center"/>
+                <Label Text="0" Grid.Column="1" Grid.Row="2" HorizontalTextAlignment="Center"/>
+            </Grid>
+            <Button Text="Reset" VerticalOptions="End"/>
+        </StackLayout>
+    </ScrollView>
+
+
+</ContentPage>
