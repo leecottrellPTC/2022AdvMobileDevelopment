@@ -1,0 +1,31 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MVVMBaseballPitchCounter"
+             x:Class="MVVMBaseballPitchCounter.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+<!--why here and not in the dictionary?? -->
+            <Color x:Key="PiratesText">#FDB827</Color>
+            <Color x:Key="PiratesBack">#27251F</Color>
+
+            <Color x:Key="AstrosText">#eb6e1f</Color>
+            <Color x:Key="AstrosBack">#002d62</Color>
+
+            <Color x:Key="PhilliesText">#e81828</Color>
+            <Color x:Key="PhilliesBack">#002d72</Color>
+
+            <Color x:Key="RockiesText">#c4ced4</Color>
+            <Color x:Key="RockiesBack">#333366</Color>
+
+            <Color x:Key="TeamText">#FDB827</Color>
+            <Color x:Key="TeamBack">#27251F</Color>
+
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

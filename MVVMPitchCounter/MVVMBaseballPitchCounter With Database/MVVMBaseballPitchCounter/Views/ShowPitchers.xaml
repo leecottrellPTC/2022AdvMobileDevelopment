@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMBaseballPitchCounter.Views.ShowPitchers"
+             Title="ShowPitchers"
+             xmlns:local="clr-namespace:MVVMBaseballPitchCounter.ViewModels">
+    <ScrollView>
+        <StackLayout BackgroundColor="{DynamicResource TeamBack}">
+            <Frame BackgroundColor="{DynamicResource TeamText}" Padding="24" Margin="0,0,0,24" CornerRadius="0">
+                <Label Text="Pitcher List" HorizontalOptions="Center" 
+                       BackgroundColor="{DynamicResource TeamText}" 
+                       TextColor="{DynamicResource TeamBack}" FontSize="36"/>
+            </Frame>
+            <Button Text="Show The Pitchers" Clicked="FillTheList"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Label HorizontalTextAlignment="Start" Text="Game Date" Grid.Column="0"/>
+                <Label HorizontalTextAlignment="Start" Text="Name" Grid.Column="1"/>
+                <Label HorizontalTextAlignment="Start" Text="Pitches" Grid.Column="2"/>
+            </Grid>
+            <CollectionView x:Name="pitcherList">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*"/>
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Label HorizontalTextAlignment="Start" Text="{Binding GameDate}" Grid.Column="0"/>
+                            <Label HorizontalTextAlignment="Start" Text="{Binding Name}" Grid.Column="1"/>
+                            <Label HorizontalTextAlignment="End" Text="{Binding TotalPitches}" Grid.Column="2"/>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </StackLayout>
+
+    </ScrollView>
+</ContentPage>
+    
+    

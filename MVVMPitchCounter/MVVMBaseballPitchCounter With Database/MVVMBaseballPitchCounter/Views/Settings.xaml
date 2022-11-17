@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVMBaseballPitchCounter.Views.Settings"
+             Title="Settings">
+    <ScrollView BackgroundColor="{DynamicResource TeamBack}">
+        <StackLayout>
+            <Frame BackgroundColor="{DynamicResource TeamText}" Padding="24" Margin="0,0,0,24" CornerRadius="0">
+                <Label Text="Settings Page" HorizontalOptions="Center" TextColor="{DynamicResource TeamBack}" 
+                       BackgroundColor="{DynamicResource TeamText}" FontSize="36"/>
+            </Frame>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <Label Text="Pittsburgh Pirates" TextColor ="{DynamicResource TeamText}" Grid.Column="0" Grid.Row="0" 
+                       HorizontalTextAlignment="Start"/>
+                <Label Text="Colors"
+                       BackgroundColor="{StaticResource PirateBack}"
+                       TextColor="{StaticResource PirateText}" Grid.Column="1" Grid.Row="0"
+                       HorizontalTextAlignment="Center"/>
+                <RadioButton x:Name="Pirates"  Grid.Column="2" Grid.Row="0" GroupName="Teams" CheckedChanged="OnTeamChange"/>
+
+                <Label Text="Houston Astros" TextColor ="{DynamicResource TeamText}" Grid.Column="0" Grid.Row="1" 
+                       HorizontalTextAlignment="Start"/>
+                <Label Text="Colors"
+                       BackgroundColor="{StaticResource AstrosBack}"
+                       TextColor="{StaticResource AstrosText}" Grid.Column="1" Grid.Row="1"
+                       HorizontalTextAlignment="Center"/>
+                <RadioButton x:Name="Astros"  Grid.Column="2" Grid.Row="1" GroupName="Teams"
+                             CheckedChanged="OnTeamChange"/>
+
+                <Label Text="Philadelphia Phillies" TextColor ="{DynamicResource TeamText}" Grid.Column="0" Grid.Row="2" 
+                       HorizontalTextAlignment="Start"/>
+                <Label Text="Colors"
+                       BackgroundColor="{StaticResource PhilliesBack}"
+                       TextColor="{StaticResource PhilliesText}" Grid.Column="1" Grid.Row="2"
+                       HorizontalTextAlignment="Center"/>
+                <RadioButton x:Name="Phillies"  Grid.Column="2" Grid.Row="2" GroupName="Teams" CheckedChanged="OnTeamChange"/>
+
+                <Label Text="Colorado Rockies" TextColor ="{DynamicResource TeamText}" Grid.Column="0" Grid.Row="3" 
+                       HorizontalTextAlignment="Start"/>
+                <Label Text="Colors"
+                       BackgroundColor="{StaticResource RockiesBack}"
+                       TextColor="{StaticResource RockiesText}" Grid.Column="1" Grid.Row="3"
+                       HorizontalTextAlignment="Center"/>
+                <RadioButton x:Name="Rockies"  Grid.Column="2" Grid.Row="3" GroupName="Teams" CheckedChanged="OnTeamChange"/>
+            </Grid>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
