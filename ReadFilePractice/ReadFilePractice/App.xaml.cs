@@ -3,7 +3,7 @@ using ReadFilePractice.Viewmodels;
 
 public partial class App : Application
 {
-    WordList theLists ;
+    public WordList theLists { get; set; }
     String DataFile = "words.txt";
     public App()
 	{
@@ -11,6 +11,7 @@ public partial class App : Application
 
 		MainPage = new AppShell();
         theLists= new WordList();
+       
        // ReadFile();
 	}
 

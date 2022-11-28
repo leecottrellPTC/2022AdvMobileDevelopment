@@ -1,25 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+//using Java.Nio.Channels;
+using ReadFilePractice.Models;
+using ReadFilePractice.Viewmodels;
 
-namespace ReadFilePractice.Viewmodels
+namespace ReadFilePractice.ViewModels
 {
-    public class WordList
+    public class WordRepository
     {
-        public List<String> wordlist { get; set; }
-        public List<String> solutions { get; set; }
-
-        public WordList() {
-            Application.Current.MainPage.DisplayAlert("WordList", "WordList", "OK");
-           ReadFile();
+        public WordRepository()
+        {
+            ReadFile();
         }
 
         public async void ReadFile()
         {
             String line;
-            wordlist = new List<String>();
+            Word word = new Word() ;
 
             //String DataFile =  @"words.txt";
             // await Application.Current.MainPage.DisplayAlert("Error", DataFile, "OK");
@@ -29,10 +30,11 @@ namespace ReadFilePractice.Viewmodels
                 using StreamReader reader = new StreamReader(fileStream);
                 while ((line = reader.ReadLine()) != null)
                 {
-                    wordlist.Add(line);
+                    word.AWord = line;
+                    FullWordList.Add(word);
 
                 }
-                await Application.Current.MainPage.DisplayAlert("Count", "I read " + wordlist.Count, "OK");
+                await Application.Current.MainPage.DisplayAlert("Count", "I read " + FullWordList.Count, "OK");
                 //solutions.SetBinding(ItemsView.ItemsSourceProperty, "wordlist");
 
                 // solutions.ItemsSource= wordlist;
@@ -44,6 +46,7 @@ namespace ReadFilePractice.Viewmodels
 
 
         }
+        public List<Word> FullWordList { get; set; }
 
     }
 }

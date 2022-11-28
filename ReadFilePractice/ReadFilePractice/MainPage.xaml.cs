@@ -1,4 +1,5 @@
 ﻿namespace ReadFilePractice;
+using ReadFilePractice.ViewModels;
 
 
 public partial class MainPage : ContentPage
@@ -13,7 +14,13 @@ public partial class MainPage : ContentPage
 		//ReadFile();
 	}
 
-	public async void ReadFile(Object o, EventArgs e)
+
+    public async void FillList(Object o, EventArgs e)
+    {
+        //solutions.ItemsSource = 
+    }
+
+    public async void ReadFile(Object o, EventArgs e)
 	{
         String line;
         
