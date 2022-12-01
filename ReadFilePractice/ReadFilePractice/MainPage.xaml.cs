@@ -17,7 +17,7 @@ public partial class MainPage : ContentPage
 
     public async void FillList(Object o, EventArgs e)
     {
-        //solutions.ItemsSource = 
+        solutions.ItemsSource = wordlist;
     }
 
     public async void ReadFile(Object o, EventArgs e)
